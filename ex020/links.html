@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style rel="stylesheet">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(170, 88, 88);
+        }
+
+        <!--símbolo copiado  erikasarti.com-->
+        a::before {
+            content: '>> ';
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https//wwww.github.com/sergiomerces" target="_blank" rel="external">Repositório do Github</a></li>
+        <li><a href="https://wwww.youtube.com/mercesergio" target="_blank" rel="external" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://sergiomerces.github.io" target="_blank" rel="author">Site sergiomerces</a></li>
+    </ul>
+</body>
+</html>
