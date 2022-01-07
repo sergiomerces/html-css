@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        tr.destaque {
+            background-color: rgba(128, 255, 0, 0.39);
+        }
+
+        .cnome {
+            background-color: coral;
+        }
+
+        .csexo {
+            background-color: rgba(0, 255, 255, 0.404);
+        }
+
+        .cidade {
+            background-color: rgba(137, 43, 226, 0.445);
+        }
+
+        .cprof {
+            background-color: rgba(169, 169, 169, 0.452);
+        }
+    </style>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <table>
+        <caption>Cadastro de Heróis</caption>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">>
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="cnome">Nome</th>
+                <th class="csexo">Sexo</th>
+                <th>Idade</th>
+                <th class="cprof">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Charles Xavier</td>
+                <td>M</td>
+                <td>50</td>
+                <td>Psicólogo</td>
+            </tr>
+            <tr>
+                <td>Tony Stark</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr class="destaque">
+                <td>Natasha Romanov</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Espiã</td>
+            </tr>
+            <tr>
+                <td>Peter Parker</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Fotógrafo</td>
+            </tr>
+            <tr>
+                <td>Jean Grey</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Psicóloga</td>
+            </tr>
+            <tr>
+                <td>Wanda Maximoff</td>
+                <td>f</td>
+                <td>28</td>
+                <td>Dona de casa</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
