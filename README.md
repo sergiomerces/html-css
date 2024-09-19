@@ -40,3 +40,12 @@ O HTML tem suporte para conteúdos em diversos formatos, texto, foto, áudio e v
     <p>Esse é o meu primeiro documento HTML!
         Estou muito feliz!
     </p>
+
+**br** - quebra uma linha
+
+----
+## Inserindo emojis
+Acessar a página [emojipedia.org](https://www.emojipedia.org) encontrar o *codepoint* um códico hexadecimal unicode: **U+1F604**.
+Trocar o **U+** por **&#x** o codepoint fica **&#x1F604** 
+
+---
