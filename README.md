@@ -43,6 +43,15 @@ O HTML tem suporte para conteúdos em diversos formatos, texto, foto, áudio e v
 
 **br** - quebra uma linha
 
+**img** - insere uma imagem
+
+    <body>
+        <h1>Testando carga com imagens</h1>
+        <p>Abaixo você vai ver uma imagem que está na mesma página.</p>
+        <img src="logo-html-200.png" alt="Logotipo HTML5">
+        <img src="logo-css-200.png" alt="Logotipo CSS3">
+    </body>
+
 ----
 ## Inserindo emojis
 Acessar a página [emojipedia.org](https://www.emojipedia.org) encontrar o *codepoint* um códico hexadecimal unicode: **U+1F604**.
