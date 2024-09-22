@@ -52,6 +52,15 @@ O HTML tem suporte para conteúdos em diversos formatos, texto, foto, áudio e v
         <img src="logo-css-200.png" alt="Logotipo CSS3">
     </body>
 
+**link** - insere o favicon e também linka com arquivos de estilo css no *head*
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favicon</title>
+        <link rel="shortcut icon" href="./img/perfil.ico" type="image/x-icon">
+    </head>
+
 ----
 ## Inserindo emojis
 Acessar a página [emojipedia.org](https://www.emojipedia.org) encontrar o *codepoint* um códico hexadecimal unicode: **U+1F604**.
