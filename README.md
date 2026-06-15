@@ -1,4 +1,4 @@
-![](/home/sergio/Documentos/dev/html-css/img/banner.png)
+![](./img/banner.png)
 
 # HTML5 - CSS3
 
