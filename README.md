@@ -56,3 +56,31 @@ De qualquer dispositivo que esteja conectado na mesma rede basta digitar o ender
 
 http://127.168.1.0:8080
 
+
+
+## Snnipet
+
+Código básico para iniciar uma página:
+
+```
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parágrafos</title>
+</head>
+<body>
+	conteúdo...
+</body>
+</html>
+```
+
+
+
+## Inserindo emojis &#x1F61C;
+
+Acessar http://emojipedia.org e copiar o código ( U+1F61C) na aba de informação técnica. No HTML inserir no formato &#x1F61C e terminar com ponto e vírgula.
+
+_Obs.: funciona bem com emojis mais comuns_.
+
