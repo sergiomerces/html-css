@@ -10,6 +10,7 @@
 - Sistema Operacional: Linux, Windows ou Mac
 - IDE: Sublime Text ou VS-Code
 - Browser: Firefox, Google Chrome ou Edge
+- Editor de imagens: Gimp
 - Git e conta no Github
 
 
@@ -83,4 +84,14 @@ Código básico para iniciar uma página:
 Acessar http://emojipedia.org e copiar o código ( U+1F61C) na aba de informação técnica. No HTML inserir no formato &#x1F61C e terminar com ponto e vírgula.
 
 _Obs.: funciona bem com emojis mais comuns_.
+
+
+
+## Imagens
+
+* A imagem não deve ultrapassar 100 kb
+* Usar formatos jpeg, png ou webp
+* Para imagens grandes de background usar jpeg que possui melhor compactação
+* Para imagens que vão ficar sobrepostas e precisam de transparência usar png
+* Preferencialmente produzir imagens nos diversos tamanhos de uso
 
