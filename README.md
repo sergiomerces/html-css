@@ -15,6 +15,8 @@
 
 
 
+![](/home/sergio/Documentos/dev/html-css/exercicio/ex003/logo_html5.png)
+
 ## HTML
 
 - Hiper Text Markup Language - Linguagem de Marcação de Hipertexto
@@ -25,6 +27,8 @@
   - áudio
 
 
+
+![](/home/sergio/Documentos/dev/html-css/exercicio/ex003/img/logo_css3.png)
 
 ## CSS
 
@@ -63,7 +67,7 @@ http://127.168.1.0:8080
 
 Código básico para iniciar uma página:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -94,4 +98,22 @@ _Obs.: funciona bem com emojis mais comuns_.
 * Para imagens grandes de background usar jpeg que possui melhor compactação
 * Para imagens que vão ficar sobrepostas e precisam de transparência usar png
 * Preferencialmente produzir imagens nos diversos tamanhos de uso
+
+### Carga de imagens
+
+```html
+<body>
+	<h1>Testando carga e Imagens</h1>
+	<p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+	<img src="./logo_html5.png" alt="logotipo HTML5">
+	<p>Podemos carregar imagens que estão em subpastas.</p>
+	<img src="./img/logo_css3.png" alt="logotipo CSS3">
+	<p>Também podemos carregar imagens externas.</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="logotipo Javascript" width="200px">
+</body>
+```
+
+
+
+
 
