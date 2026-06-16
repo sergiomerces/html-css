@@ -115,5 +115,29 @@ _Obs.: funciona bem com emojis mais comuns_.
 
 
 
+## Favicon
+
+Ícone de identificação da página que é exibido na lateral esquerda da aba do navegador.
+
+Para baixar um pacote de favicon com arte própria:
+
+http://iconarchive.org
+
+Para criar um favicon 
+
+http://favicon.io
+
+Preferência para o formato svg, ico ou png.
+
+Para adicionar o ícone precisamos inserir a tag link no head do arquivo html.
+
+``` html
+<link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+```
+
+
+
+
+
 
 
