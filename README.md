@@ -234,3 +234,57 @@ Tags e atributo obsoletos:
 </body>
 ```
 
+
+
+## Listas
+
+### Listas Ordenadas
+
+```html
+	<h2>Listas ordenadas</h2>
+	<ol type="1" start="1">
+		<!--Types 1 A a I i-->
+		<li>Acordar</li>
+		<li>Ligar para o João</li>
+		<li>Tomar café</li>
+		<li>Escovar os dentes</li>
+		<li>ir para a faculdade</li>
+		<li>Almoçar</li>
+		<li>Ir para o trabalho</li>
+		<li>Voltar para casa</li>
+		<li>Jantar</li>
+		<li>Dormir</li>
+	</ol>
+```
+
+
+
+### Listas Não Ordenadas
+
+```html
+<h2>Listas não ordenadas</h2>
+	<ul type="square">
+		<!--Types disc circle square-->
+		<li>Pão</li>
+	    <li>Leite</li>
+	    <li>Tomate</li>
+	    <li>Manteiga</li>
+	    <li>Arroz</li>
+	    <li>Feijão</li>
+	</ul>
+```
+
+
+
+### Listas de Definição
+
+```html
+<dl>
+	<dt>HTML</dt>
+	<dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+	<dt>CSS</dt>
+	<dd>Linguagem de marcação para a criação de design de um site</dd>
+	<dt>Javascript</dt>
+	<dd>Linguagem de programação para a a criação de interatividade de um site</dd>
+</dl>
+```
