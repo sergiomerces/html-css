@@ -288,3 +288,38 @@ Tags e atributo obsoletos:
 	<dd>Linguagem de programação para a a criação de interatividade de um site</dd>
 </dl>
 ```
+
+
+
+## Links
+
+Links são a essência da internet são por eles (hyperlinks) que acessamos outras páginas.
+
+O atributo _target_ pode assumir os valores _self para carregar o link na mesma janela ou _blank para carregar o conteúdo em uma nova aba.
+
+### Link externo
+
+```html
+<p>Você pode acessar o meu <a href="https://github.com/sergiomerces/" target="_blank" rel="external">repositório público no Github</a></p>
+```
+
+
+
+### Link interno
+
+```html
+<p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="./page002.html" rel="next">Segunda página</a></p>
+
+<p><a href="index.html" rel="prev">Voltar para a primeira página.</a></p>
+```
+
+
+
+### Link para download
+
+```html
+<a href="./artigo.pdf" type="application/pdf">Baixar o artigo em PDF</a>
+
+<a href="./artigo.zip" type="application/zip">Baixar o artigo compactado ZIP</a>
+```
+
