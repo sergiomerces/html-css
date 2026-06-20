@@ -323,3 +323,22 @@ O atributo _target_ pode assumir os valores _self para carregar o link na mesma 
 <a href="./artigo.zip" type="application/zip">Baixar o artigo compactado ZIP</a>
 ```
 
+
+
+## Imagens Dinâmicas
+
+Como os usuários acessam a internet em dispositivos com diferentes tamanhos de tela, é preciso pensar na adaptabilidade das imagens para que possam ser carregadas de forma eficiente em dispositivos de telas grandes como em telas pequenas.
+
+Para isso tenha versões em tamanhos diferentes das imagens que fará uso no site.
+
+```html
+<h1>Imagem dinâmica</h1>
+	<p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+	<picture>
+		<source media="(max-width: 750px)" srcset="./img/foto-p.png" type="image/png">
+		<source media="(max-width: 1050px)" srcset="./img/foto-m.png" type="image/png">
+		<img src="./img/foto-g.png" alt="Imagem flexível">
+	</picture>
+```
+
+Usamos a tag <picture> para informar que ali será exibida uma imagem. Devemos manter a escrita da maior para a menor imagem ou o inverso, nesse exemplo vamos usar a maior imagem como padrão e com a tag <source> informamos na ordem quais são as outras imagens que queremos para cada tamanho de tela.
