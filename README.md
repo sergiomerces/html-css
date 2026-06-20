@@ -342,3 +342,14 @@ Para isso tenha versões em tamanhos diferentes das imagens que fará uso no sit
 ```
 
 Usamos a tag <picture> para informar que ali será exibida uma imagem. Devemos manter a escrita da maior para a menor imagem ou o inverso, nesse exemplo vamos usar a maior imagem como padrão e com a tag <source> informamos na ordem quais são as outras imagens que queremos para cada tamanho de tela.
+
+
+
+## Tocando áudio
+
+```html
+<h1>Reproduzindo áudio</h1>
+	<p>Vamos aprender a reproduzir áudios em HTML5.</p>
+	<audio src="./audio/happy-mistake.mp3" controls autplay></audio>
+```
+
