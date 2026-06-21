@@ -347,9 +347,24 @@ Usamos a tag <picture> para informar que ali será exibida uma imagem. Devemos m
 
 ## Tocando áudio
 
+Para inserir áudio podemos usar a tag <audio> o atributo _controls_ é responsável pela exibição dos controles na tela e o atributo _autoplay_pelo início automático.
+
 ```html
 <h1>Reproduzindo áudio</h1>
 	<p>Vamos aprender a reproduzir áudios em HTML5.</p>
-	<audio src="./audio/happy-mistake.mp3" controls autplay></audio>
+	<audio src="./audio/happy-mistake.mp3" controls autoplay></audio>
 ```
+
+Para que tenhamos certeza que o áudio será reproduzido pelos diferentes tipos de navegadores ou sistemas operacionais, recomenda-se que usemos a mídia com formatos mais populares para maior compatibilidade, como mp3 e ogg. O formato wav não é muito recomendado por gerar arquivos mais pesados, o que atrapalha o desempenho da página.
+
+```html
+<audio preload="auto" autoplay controls loop>
+		<source src="./audio/musica.mp3" type="audio/mpeg">
+		<source src="./audio/musica.ogg" type="audio/ogg">
+		<source src="./audio/musica.wav" type="audio/wav">
+		<p>Infelizmente seu navegado não consegue reproduzir áudio. <a href="./audio/musica.mp3" type="audio/mp3">Clique aqui para baixar o arquivo MP3</a></p>
+</audio>
+```
+
+Para conversão de formatos de áudio, caso não tenho uma aplicação instalada pode usar ferramentas online como o Convertio (https://convertio.co/pt/).
 
