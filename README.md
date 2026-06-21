@@ -345,9 +345,9 @@ Usamos a tag <picture> para informar que ali será exibida uma imagem. Devemos m
 
 
 
-## Tocando áudio
+## Reproduzindo áudio
 
-Para inserir áudio podemos usar a tag <audio> o atributo _controls_ é responsável pela exibição dos controles na tela e o atributo _autoplay_pelo início automático.
+Para inserir áudio podemos usar a tag <audio> o atributo _controls_ é responsável pela exibição dos controles na tela e o atributo _autoplay_pelo início automático. Podemos obter faixas de áudio de uso livre através do Youtube Studio.
 
 ```html
 <h1>Reproduzindo áudio</h1>
@@ -367,4 +367,58 @@ Para que tenhamos certeza que o áudio será reproduzido pelos diferentes tipos 
 ```
 
 Para conversão de formatos de áudio, caso não tenho uma aplicação instalada pode usar ferramentas online como o Convertio (https://convertio.co/pt/).
+
+
+
+## Reproduzindo vídeo
+
+Podemos obter vídeos de uso livre através do Pexels e também podemos fazer a conversão usando o Convertio para arquivos de até 1 GB.
+
+Outra aplicação de código aberto recomendada para conversão de vídeos é o Handbrake.
+
+````html
+<h1>Inserindo vídeos hospedados localmente</h1>
+	<p>Este vídeo está hospedado no meu próprio servidor.</p>
+	<video src="./video/copa.mp4" width="500" controls></video>
+````
+
+Para garantir a compatibilidade quanto mais fontes melhor:
+
+```html
+	<video width="500" poster="./thumb/thumb_copa.png" controls>
+		<source src="./video/copa.mp4" type="video/mp4">
+		<source src="./video/copa.ogg" type="video/ogg">
+		<source src="./video/copa.webm" type="video/webm">
+		<p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+	</video>
+```
+
+Vídeos hospedados em servidor próprio e com várias fontes para compatibilidade podem criar um problema com o alto consumo de banda de tráfego, uma opção para evitar isso é usar serviços como Vimeo ou Youtube para hospedar os vídeos e garantir a compatibilidade em qualquer navegador.
+
+## Reproduzindo vídeos do Yuutube/Vimeo
+
+```html
+<h1>Inserindo vídeos do Vimeo</h1>
+	<iframe src="https://player.vimeo.com/video/1203149120?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Thundercats - Abertura - Dublado em HD"></iframe>
+```
+
+
+
+## Compatibilidade mídias
+
+Para os sistemas operacionais Widows e MacOS possuem suporte nativo para formatode mídias proprietárias como mp3/mp4. Para sistemas Unix Like o suporte padrão é para formatos de código aberto como ogg/ogv. 
+
+Portanto pode acontecer de estar rodando o Firefox ou o Opera num dispositivo com Linux e ele não reconhecer os formatos mp3/mp4.
+
+
+
+Firefox	     ogg	ogv	webm
+
+Chrome	   mp3	mp4     webm
+
+Edge		mp3	mp4      webm
+
+Opera             mp3	mp4      webm
+
+Safari	      mp3	mp4	****
 
