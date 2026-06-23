@@ -500,3 +500,52 @@ Outra forma mais organizada e limpa de de aplicar estilos usando o CSS é usar o
 </html>
 ```
 
+## CSS Externo
+
+Para garantir a aplicação de estilos a várias páginas simultâneamente a forma mais adequada é usar o CSS desacoplado do HTML. Escrevermos o código HTML num arquivo e o CSS em outro, no HTML usamos a tag <link> para linkar a folha de estilo.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Segunda página</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>Segunda página</h1>
+	<h2>Teste de estilos</h2>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Excepturi commodi pariatur natus repudiandae dolores optio aliquid, molestias, vel hic ut in eligendi sequi, perspiciatis, esse similique dolorem repellat dolorum accusamus.</p>
+	<p><a href="./index.html">Voltar</a></p>
+</body>
+</html>
+```
+
+
+
+```css
+@charset "UTF-8";
+
+body {
+	background-color: lightskyblue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	}
+
+h1 {
+	color: mediumblue;
+	background-color: dodgerblue;
+	font-size: 1.6em;
+}
+
+h2 {
+	color: darkred;
+	font-size: 1.2em;
+}
+
+p {
+	text-align: justify;
+}
+```
+
