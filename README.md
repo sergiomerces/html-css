@@ -422,3 +422,81 @@ Opera             mp3	mp4      webm
 
 Safari	      mp3	mp4	****
 
+
+
+# CSS
+
+## CSS inline
+
+A forma mais simples de editar um estilo de uma página HTML é usando o estilo CSS _inline_, o código é inserido dentro de cada tag do elemento que se quer personalizar, usando o atributo **style** e o código CSS como valor.
+
+```html
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estilos CSS Inline</title>
+</head>
+<body style="background-color: #87cefa; font-family: Arial, Helvetica, sans-serif; font-size: 20px">
+	<h1 style="color: #0000cd; font-size: 1.5em; background-color: dodgerblue;">Capítulo 1</h1>
+	<h2 style="color: darkred; font-size: 1.2em">Capítulo 1.1</h2>
+	<p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis odit ut, quis nam earum fugit delectus? Magnam ab earum amet eveniet iure praesentium ut tempora, nisi, repellat, sit vel eaque?</p>
+	<h2 style="color: darkred; font-size: 1.2em">Capítulo 1.2</h2>
+	<p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic praesentium, iure ullam quia libero, dolore? Cupiditate, explicabo, ducimus. Eligendi, ipsam odit minima aspernatur beatae voluptatum et rem voluptates alias?</p>
+	<h1 style="color: #0000cd; font-size: 1.5em; background-color: dodgerblue;">Capítulo 2</h1>
+	<h2 style="color: darkred; font-size: 1.2em">Capítulo 2.1</h2>
+	<p style="text-align: justify;">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sed ab sapiente quis quaerat. Reiciendis inventore perspiciatis, deserunt modi. Ipsum enim hic omnis nobis commodi magni cum corporis aspernatur dolore voluptate.</p>
+</body>
+</html>
+```
+
+
+
+## CSS embutido
+
+Outra forma mais organizada e limpa de de aplicar estilos usando o CSS é usar o código embutido no <head> e usar seletores que podem ser tags, classes ou ids para editar o estilo emtre a tag <style>.
+
+```html
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estilos CSS Inline</title>
+	<style>
+		body {
+			background-color: lightskyblue;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+		}
+
+		h1 {
+			color: mediumblue;
+			background-color: dodgerblue;
+			font-size: 1.6em;
+		}
+
+		h2 {
+			color: darkred;
+			font-size: 1.2em;
+		}
+
+		p {
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<h1>Capítulo 1</h1>
+	<h2>Capítulo 1.1</h2>
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis odit ut, quis nam earum fugit delectus? Magnam ab earum amet eveniet iure praesentium ut tempora, nisi, repellat, sit vel eaque?</p>
+	<h2>Capítulo 1.2</h2>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic praesentium, iure ullam quia libero, dolore? Cupiditate, explicabo, ducimus. Eligendi, ipsam odit minima aspernatur beatae voluptatum et rem voluptates alias?</p>
+	<h1>Capítulo 2</h1>
+	<h2>Capítulo 2.1</h2>
+	<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sed ab sapiente quis quaerat. Reiciendis inventore perspiciatis, deserunt modi. Ipsum enim hic omnis nobis commodi magni cum corporis aspernatur dolore voluptate.</p>
+</body>
+</html>
+```
+
