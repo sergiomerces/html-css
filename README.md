@@ -549,3 +549,11 @@ p {
 }
 ```
 
+
+
+A ordem de prevalência entre os métodos de aplicação do CSS são:
+
+1. inline
+2. embutido
+3. externo
+
