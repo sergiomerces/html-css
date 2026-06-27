@@ -549,11 +549,71 @@ p {
 }
 ```
 
-
-
 A ordem de prevalência entre os métodos de aplicação do CSS são:
 
 1. inline
 2. embutido
 3. externo
 
+---
+
+
+
+# Psicologia das cores
+
+A palea de cores de um site não é escolhida de forma aleatória, as cores transmitem informação, estão ligadas a sentimentos:
+
+![A psicologia das cores na comunicação digital: cor além da estética como  estratégia de percepção - Creative Hut](https://creativehut.com.br/wp-content/uploads/2025/10/17.1-1-1024x575.png)
+
+
+
+![As cores comunicam, despertam emoções, sentimentos, conceitos e ideias e  inspiram ações e pensamentos. Também carregam significados culturais,  sociais, espirituais e cientificos. | José Carlos Cavalcante](https://media.licdn.com/dms/image/v2/D5622AQGjZymy96q0bA/feedshare-shrink_800/feedshare-shrink_800/0/1681121651702?e=2147483647&v=beta&t=U2r6uIJEHkpEyp-WHpQRFhqejS2DTMcpCU5NKd2Z1oo)
+
+
+
+## Círculo Cromático
+
+
+
+### Nomenclatura das cores
+
+
+
+
+
+![Quais são as cores, seus tipos, características e significados - Toda  Matéria](https://static.todamateria.com.br/upload/56/df/56df234303039-caracteristicas-das-cores.jpg)
+
+
+
+### Combinação de cores para paletas
+
+![Círculo Cromático - Doris Antunes - Consultoria de Imagem e Estilo](https://dorisantunes.com.br/wp-content/uploads/2018/12/Combina%C3%A7%C3%A3o-de-Cores.png)
+
+## Representando cores em CSS
+
+Podemos representar cores em CSS através de seu nome em inglês, por códigos hexadecimal ou pela escala RBG:
+
+```html
+<body>
+    <!-- respresentação por nomes -->
+    <h2 style="background-color: blue; color: white;">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laboriosam assumenda enim asperiores eligendi ullam ad vitae architecto dolore tempore adipisci, dignissimos dolorem odio nulla corporis deserunt facilis. Qui, a?</p>
+    <!-- respresentação por valores hexadecimais -->
+    <h2 style="background-color: #0000FF; color: #FFFFFF;">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laboriosam assumenda enim asperiores eligendi ullam ad vitae architecto dolore tempore adipisci, dignissimos dolorem odio nulla corporis deserunt facilis. Qui, a?</p>
+    <!-- respresentação por valores RGB -->
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laboriosam assumenda enim asperiores eligendi ullam ad vitae architecto dolore tempore adipisci, dignissimos dolorem odio nulla corporis deserunt facilis. Qui, a?</p>
+    <!-- representação por valores HSL -->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, laboriosam assumenda enim asperiores eligendi ullam ad vitae architecto dolore tempore adipisci, dignissimos dolorem odio nulla corporis deserunt facilis. Qui, a?</p>
+</body>
+```
+
+Definir cores pelo nome é mais prático para testes, porém as opções são mais limitadas para variações das milhares de possibilidade. A definição com código hexadecimal dá mais possibilidades de explorar as milhares de cores e ainda oferece o carregamento mais rápido da página, é o método mais utilizado profissionalmente. A definição por RGB e HSL também oferecem possibilidades de explorar mais cores como o hexadecimal. 
+
+O hexadecimal usa números em base (16) onde cada par corresponde a uma cor primária do R (red), G (green) e B (blue) indicando a quantidade daquela cor na composição.
+
+O sistema RGB, já mencionado acima, tem uma escala de 0 a 255 para cada canal de cor, onde a presença ou a falta de uma das cores vai produzir tons diferenciados.
+
+O sistema H (hue - matiz), S (saturation - saturação) e L (luminosity - luminosidade)  define s cores através da quantidade de cada um das características na composição da cor, analogamente ao RGB.
